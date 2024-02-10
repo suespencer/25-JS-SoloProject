@@ -7,18 +7,43 @@ body {
 header {
   height: 150px;
   background-image: url("images/diner01.jpg");
+  color: whitesmoke;
 }
 
 .img-container {
-  width: 100px;
+  width: 90px;
 }
 
-img {
-  width: 80px;
+.product {
+  width: 70px;
+  font-size: .25em;
+}
+
+.food-container {
+  font-size: .75em;
+}
+
+.addToCart {
+    position: relative;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.plus-sign {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20px;
+    position: absolute;
 }
 
 .inner-section {
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 100px 300px auto;
+
 }
 
 .item-container {
@@ -26,4 +51,31 @@ img {
   width: 500 px;
   color: black;
   font-family: "Protest Riot", sans-serif;
+}
+
+.addToCart {
+
+}
+
+.order {
+column-count: 2;
+}
+
+.modal {
+  display: none;
+  /* display: flex; */
+  position: fixed;
+  right: 0;
+  left: 50;
+  top: 200;
+  bottom: 0;
+
+
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background-color: #212529;
+  color: whitesmoke;
+
 }
